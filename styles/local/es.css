@@ -1,0 +1,24 @@
+#frontpage #habbo-logo {
+  background-image: url("http://images.habbo.com/c_images/album831/Habbo_logo_es_specific_4.png");
+height: 60px;
+width: 169px;
+margin-left: 0px;
+}
+
+#header-container #header h1, body.process-template #header h1 {
+  background-repeat: no-repeat;
+  background-image: url(http://images.habbo.com/c_images/album831/Antena3_alpha.png);
+  background-position: 115px 1px;
+  margin-bottom: 5px;
+  padding-bottom: 23px;
+  width: 172px;
+}
+
+
+#header h1 {
+  margin-top: 6px;
+}
+
+#welcome #header-container #header h1, body.process-template #header h1 {
+  background-image: url(http://images.habbo.com/c_images/album831/Antena3_alpha.png);
+}

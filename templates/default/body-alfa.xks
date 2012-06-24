@@ -1,0 +1,165 @@
+<body id="[% body_id %]" class="[% IF !LOGGED_IN %]anonymous[% END %]">
+<div id="overlay"></div> 
+[% IF LOGGED_IN %]
+<div id="change-password-form" style="display: none;">
+    <div id="change-password-form-container" class="clearfix">
+        <div id="change-password-form-title" class="bottom-border">¿Contraseña olvidada?</div>
+        <div id="change-password-form-content" style="display: none;">
+            <form method="post" action="[% http_host %]/forgot/password/index.php" id="forgotten-pw-form">
+                <input type="hidden" name="forgot" />
+                <input type="hidden" name="page" value="?changePwd=true" />
+                <span>Por favor, introduce el email de tu Habbo cuenta:</span>
+                <div id="email" class="center bottom-border">
+                    <input type="text" id="change-password-email-address" name="mail" value="" class="email-address" maxlength="48"/>
+                    <div id="change-password-error-container" class="error" style="display: none;">Por favor, introduce un e-mail</div>
+                </div>
+            </form>
+            <div class="change-password-buttons">
+                <a href="#" id="change-password-cancel-link">Cancelar</a>
+                <a href="#" id="change-password-submit-button" class="new-button"><b>Enviar email</b><i></i></a>
+
+            </div>
+        </div>
+        <div id="change-password-email-sent-notice" style="display: none;">
+            <div class="bottom-border">
+                <span>Te hemos enviado un email a tu dirección de correo electrónico con el link que necesitas clicar para cambiar tu contraseña.<br />
+<br />
+
+¡NOTA!: Recuerda comprobar también la carpeta de 'Spam'</span>
+                <div id="email-sent-container"></div>
+
+            </div>
+            <div class="change-password-buttons">
+                <a href="#" id="change-password-change-link">Atrás</a>
+                <a href="#" id="change-password-success-button" class="new-button"><b>Cerrar</b><i></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="change-password-form-container-bottom"></div>
+
+</div>
+
+<script type="text/javascript">
+
+HabboView.add( function() {
+     ChangePassword.init();
+});
+</script>
+[% END %]
+<div id="header-container"> 
+	<div id="header" class="clearfix"> 
+		<h1><a href="[% http_host %]"></a></h1> 
+       <div id="subnavi"> 
+			<div id="subnavi-user"> 
+[% IF LOGGED_IN %]
+				<ul> 
+					<li id="myfriends"><a href="#"><span>Mis Amigos</span></a><span class="r"></span></li> 
+					<li id="mygroups"><a href="#"><span>Mis Grupos</span></a><span class="r"></span></li> 
+					<li id="myrooms"><a href="#"><span>Mis Salas</span></a><span class="r"></span></li> 
+				</ul> 
+[% ELSE %]
+			<div class="clearfix">&nbsp;</div> 
+                <p>
+
+		        <a href="#" id="enter-hotel-open-medium-link" target="client">Entrar a Habbo Hotel</a> 
+                </p>
+[% END %]
+			</div> 
+[% IF LOGGED_IN %]
+            <div id="subnavi-search"> 
+                <div id="subnavi-search-upper"> 
+		<ul id="subnavi-search-links">
+                 <li><a href="[% http_host %]/help" target="habbohelp">Ayuda</a></li>
+             <li>
+                 <form action="[% http_host %]/account/logout?token=[% ANTI_CSRF %]" method="post">
+                     <button type="submit" id="signout" class="link"><span>Salir</span></button>
+                 </form>
+             </li>
+         </ul>
+                </div> 
+            </div> 
+            <div id="to-hotel"> 
+<a href="[% http_host %]/client" [% IF USER_ONLINE %]id="enter-hotel-open-medium-link"[% ELSE %]class="new-button green-button"[% END %] target="client" onclick="HabboClient.openOrFocus(this); return false;">
+				[% IF USER_ONLINE %]
+					Entrar al Hotel
+				[% ELSE %]
+					<b>Entrar a Habbo Hotel</b><i></i>
+				[% END %]
+</a>
+			</div>            
+        </div> 
+        <script type="text/javascript"> 
+		L10N.put("purchase.group.title", "Crear un grupo");
+		document.observe("dom:loaded", function() {
+            \$("signout").observe("click", function() {
+                HabboClient.close();
+            });
+        });
+        </script>
+[% ELSE %]
+		           <div id="subnavi-login"> 
+                <form action="[% http_host %]/account/submit" method="post" id="login-form"> 
+            		<input type="hidden" name="page" value="[% http_host %][% REQUEST_URI %]" /> 
+                    <ul> 
+                        <li> 
+                            <label for="login-username" class="login-text"><b>Email</b></label> 
+                            <input tabindex="1" type="text" class="login-field" name="credentials.username" id="login-username" /> 
+		                    <a href="#" id="login-submit-new-button" class="new-button" style="float: left; display:none"><b>Conectar</b><i></i></a> 
+                            <input type="submit" id="login-submit-button" value="Entrar" class="submit"/> 
+                        </li> 
+                        <li> 
+                            <label for="login-password" class="login-text"><b>Contrase&ntilde;a</b></label> 
+                            <input tabindex="2" type="password" class="login-field" name="credentials.password" id="login-password" /> 
+                            <input tabindex="3" type="checkbox" name="_login_remember_me" value="true" id="login-remember-me" /> 
+                            <label for="login-remember-me" class="left">Mantener conectado</label> 
+                        </li> 
+                    </ul> 
+                </form> 
+                <div id="subnavi-login-help" class="clearfix"> 
+                    <ul> 
+                                          <li class="register"><a href="/account/password/forgot" id="forgot-password"><span>¿Contraseña olvidada?</span></a></li>
+<li><a href="[% http_host %]/quickregister/start"><span>¡Reg&iacute;strate ahora!</span></a></li> 
+                    </ul> 
+                </div> 
+<div id="remember-me-notification" class="bottom-bubble" style="display:none;"> 
+	<div class="bottom-bubble-t"><div></div></div> 
+	<div class="bottom-bubble-c"> 
+					Seleccionando esta opción permanecerás conectado a Habbo hasta que des a la opción 'Salir' 
+	</div> 
+	<div class="bottom-bubble-b"><div></div></div> 
+</div> 
+            </div> 
+        </div> 
+		<script type="text/javascript"> 
+			LoginFormUI.init();
+			RememberMeUI.init("right");
+		</script> 
+[% END %]
+		
+[% alfa_navi %]
+ 
+        <div id="habbos-online"><div class="rounded"><span>[% now_online %] Habbos conectados</span></div></div> 
+		
+	</div> 
+</div> 
+
+ 
+<div id="content-container"> 
+ 
+
+[% IF !LOGGED_IN %]
+[% ELSE %]
+<div id="navi2-container" class="pngbg"> 
+    <div id="navi2" class="pngbg clearfix"> 
+[% omega_navi %]
+    </div> 
+</div> 
+[% END %]
+
+<div id="container">
+<div id="content" style="position: relative" class="clearfix">
+<script type="text/javascript">
+if (typeof HabboView != "undefined") {
+	HabboView.run();
+}
+</script>

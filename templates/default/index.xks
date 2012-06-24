@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"/>
+<title>Beryllium - Reserva suite gratis en el mayor Hotel virtual. Queda con tus viej@s amig@s, haz nuev@s, juega, chatea, crea tu avatar, tus habitaciones y más...</title>
+<script type="text/javascript">
+var andSoItBegins = (new Date()).getTime();
+</script>
+<link rel="shortcut icon" href="[% images_host %]/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/730/web-gallery/v2/favicon.ico" type="image/vnd.microsoft.icon"/>
+<link rel="stylesheet" href="[% images_host %]/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/730/web-gallery/static/styles/frontpage.css" type="text/css"/>
+<style type="text/css">body{background-color:#000000;}#footer .footer-links{color:#666666;}#footer .footer-links a{color:#ffffff;}#footer .copyright{color:#666666;}#footer #compact-tags-container span,#footer #compact-tags-container a{color:#333333;}</style>
+<!--<style type="text/css">body{background-color:#000000;}#fp-container #header h1 a{height:92px;width:200px;background-image:url('/Public/Styles/Beryllium/Images/logo.png');}#footer .footer-links{color:#666666;}#footer .footer-links a{color:#b3b3b3;}#footer .copyright{color:#727272;}#habbo-logo{background:url("[% images_host %]/images/logo.png") no-repeat scroll 0 0 transparent;height:80px;margin-left:02px;margin-top:10px;width:165px;}</style>-->
+<script src="[% images_host %]/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/730/web-gallery/static/js/libs2.js" type="text/javascript"></script>
+<script src="[% images_host %]/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/730/web-gallery/static/js/landing.js" type="text/javascript"></script>
+<script type="text/javascript">
+var ad_keywords = "";
+var ad_key_value = "";
+</script>
+<script type="text/javascript">
+document.habboLoggedIn = false;
+var habboName = null;
+var habboId = null;
+var habboReqPath = "";
+var habboStaticFilePath = "[% http_host %]/web-gallery";
+var habboImagerUrl = "[% http_host %]/habbo-imaging/";
+var habboPartner = "";
+var habboDefaultClientPopupUrl = "[% http_host %]/client";
+window.name = "habboMain";
+if (typeof HabboClient != "undefined") {
+    HabboClient.windowName = "BerylliumClientWnd";
+    HabboClient.maximizeWindow = true;
+}
+
+
+</script>
+<style type="text/css">body{background-color:#000000;}#footer .footer-links{color:#808080;}#footer .footer-links a{color:#bebebe;}#footer .copyright{color:#727272;}</style>
+<meta name="description" content="Beryllium Hotel: haz amig@s, &Uacute;nete a la diversión y date a conocer."/>
+<meta name="keywords" content="Beryllium cms, Beryllium perl cms, Beryllium cms perl, Beryllium perl, xks, xks perl, perl Beryllium"/>
+<!--[if IE 8]>
+<link rel="stylesheet" href="[% images_host %]/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/730/web-gallery/static/styles/ie8.css" type="text/css" />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="[% images_host %]/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/730/web-gallery/static/styles/ie.css" type="text/css" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="[% images_host %]/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/730/web-gallery/static/styles/ie6.css" type="text/css" />
+<script src="[% images_host %]/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/730/web-gallery/static/js/pngfix.js" type="text/javascript"></script>
+<script type="text/javascript">
+try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {}
+</script>
+
+<style type="text/css">
+body { behavior: url(/js/csshover.htc); }
+</style>
+<![endif]-->
+<meta name="build" content="63-BUILD511 - 21.06.2011 10:14 - es"/>
+<meta property="fb:app_id" content="[% fb_appid %]"/>
+<meta property="og:site_name" content="Beryllium Hotel"/>
+<meta property="og:title" content="Beryllium: Reserva suite gratis en el mayor Hotel virtual. Queda con tus viej@s amig@s, haz nuev@s, juega, chatea, crea tu avatar, tus habitaciones y más aún..."/>
+<meta property="og:url" content="http:[% http_host %]"/>
+<meta property="og:image" content="[% images_host %]/v2/images/facebook/app_habbo_hotel_image.gif"/>
+<meta property="og:locale" content="es_ES"/>
+</head>
+<body id="frontpage">
+<div id="overlay"></div>
+<div id="change-password-form" style="display: none;">
+<div id="change-password-form-container" class="clearfix">
+<div id="change-password-form-title" class="bottom-border">¿Contraseña olvidada?</div>
+<div id="change-password-form-content" style="display: none;">
+<form method="post" action="http:[% http_host %]/forgot/password/index.php" id="forgotten-pw-form">
+<input type="hidden" name="forgot"/>
+<input type="hidden" name="page" value="http:[% http_host %]/?changePwd=true"/>
+<span>Por favor, introduce el e-mail de tu cuenta Beryllium:</span>
+<div id="email" class="center bottom-border">
+<input type="text" id="change-password-email-address" name="mail" value="" class="email-address" maxlength="48"/>
+<div id="change-password-error-container" class="error" style="display: none;">Por favor, introduce un e-mail</div>
+</div>
+</form>
+<div class="change-password-buttons">
+<a href="#" id="change-password-cancel-link">Cancelar</a>
+<a href="#" id="change-password-submit-button" class="new-button"><b>Enviar email</b><i></i></a>
+</div>
+</div>
+<div id="change-password-email-sent-notice" style="display: none;">
+<div class="bottom-border">
+<span>Te hemos enviado un email a tu dirección de correo electrónico con el link que necesitas clicar para cambiar tu contraseña.<br/><br/>¡NOTA!: Recuerda comprobar tambi&eacute;n la carpeta de 'Spam'</span>
+<div id="email-sent-container"></div>
+</div>
+<div class="change-password-buttons">
+<a href="#" id="change-password-change-link">Atr&aacute;s</a>
+<a href="#" id="change-password-success-button" class="new-button"><b>Cerrar</b><i></i></a>
+</div>
+</div>
+</div>
+<div id="change-password-form-container-bottom"></div>
+</div>
+<script type="text/javascript">
+HabboView.add( function() {
+     ChangePassword.init();
+});
+</script>
+<div id="site-header">
+<form id="loginformitem" name="loginformitem" action="http:[% http_host %]/account/submit" method="post">
+[% IF (errorz == 'notfound') %]
+<div id="loginerrorfieldwrapper">
+	<div id="loginerrorfield">
+		<div>Tu contraseña y email no coinciden. Para leer más sobre problemas de conexión, por favor haz clic <a href="#">aquí.</a></div>
+	</div>
+</div>
+[% END %]
+<div style="clear: both;"></div>
+<div id="site-header-content">
+<div id="habbo-logo"></div>
+<div id="login-form">
+<div id="login-form-email">
+<label for="login-username" class="login-text">Email</label>
+<input tabindex="3" type="text" class="login-field " name="credentials.username" id="login-username" value="[% IF (username_inpt != '') %][% username_inpt %][% END %]" maxlength="48"/>
+<input tabindex="6" type="checkbox" name="_login_remember_me" id="login-remember-me" value="true"/>
+<label for="login-remember-me">Mantener conectado</label>
+<div id="landing-remember-me-notification" class="bottom-bubble" style="display:none;">
+<div class="bottom-bubble-t"><div></div></div>
+<div class="bottom-bubble-c">
+Seleccionando esta opción permanecer&aacute;s conectado a Beryllium hasta que des a la opción 'Desconectar' </div>
+<div class="bottom-bubble-b"><div></div></div>
+</div>
+</div>
+<div id="login-form-password">
+<label for="login-password" class="login-text">Contraseña</label>
+<input tabindex="4" type="password" class="login-field " name="credentials.password" id="login-password" maxlength="32"/>
+<div id="login-forgot-password">
+<a href="#" id="forgot-password"><span>¿Contraseña olvidada?</span></a>
+</div>
+</div>
+<div id="login-form-submit">
+<input type="submit" value="Conectar" class="login-top-button" id="login-submit-button"/>
+<a href="#" tabindex="5" id="login-submit-new-button"><span>Conectar</span></a>
+</div>
+</div>
+<div id="rpx-login">
+<div>
+<div id="fb-root"></div>
+<script type="text/javascript">
+    window.fbAsyncInit = function() {
+        Cookie.erase("fbsr_[% fb_appid %]");
+        FB.init({appId: '[% fb_appid %]', status: true, cookie: true, xfbml: true, oauth: true});
+        $(document).fire("fbevents:scriptLoaded");
+    };
+
+    window.assistedLogin = function(FBobject, optresponse) {
+        Cookie.erase("fbsr_[% fb_appid %]");
+        FB.init({appId: '[% fb_appid %]', status: true, cookie: true, xfbml: true, oauth: true});
+		
+        permissions = 'user_birthday,email';
+        defaultAction = function(response) {
+            if (response.authResponse) {
+                fbConnectUrl = "http:[% http_host %]/facebook_loggin?connect=true";
+                Cookie.erase("fbhb_val_[% fb_appid %]");
+                Cookie.set("fbhb_val_[% fb_appid %]", response.authResponse.accessToken);
+                Cookie.erase("fbhb_expr_[% fb_appid %]");
+                Cookie.set("fbhb_expr_[% fb_appid %]", response.authResponse.expiresIn);
+                window.location.replace(fbConnectUrl);
+            }
+        };
+		
+        if (typeof optresponse == 'undefined')
+            FB.login(defaultAction, {scope:permissions});
+        else
+            FB.login(optresponse, {scope:permissions});
+    };
+    (function() {
+        var e = document.createElement('script');
+        e.async = true;
+        e.src = document.location.protocol + '//connect.facebook.net/es_ES/all.js';
+        document.getElementById('fb-root').appendChild(e);
+    }());
+</script>
+<a class="fb_button fb_button_large" onclick="assistedLogin(FB); return false;"><span class="fb_button_text">Conectar vía Facebook</span></a>
+</div>
+<div>
+</div>
+<div>
+<div id="rpx-signin">
+<a class="rpxnow" onclick="return false;" href="#">Más vías de conexión</a>
+</div> </div>
+</div>
+<noscript>
+<div id="alert-javascript-container">
+<div id="alert-javascript-title">
+Sin soporte JavaScript </div>
+<div id="alert-javascript-text">
+Javascript est&aacute; deshabilitado en tu navegador. Por favor, permite que haya JavaScript o actualiza tu navegador a una versión con Javascript para poder usar Habbo :) </div>
+</div>
+</noscript>
+<div id="alert-cookies-container" style="display:none">
+<div id="alert-cookies-title">
+&quot;Cookies&quot; deshabilitadas </div>
+<div id="alert-cookies-text">
+Tu navegador est&aacute; configurado para no aceptar "cookies". Por favor, habilita el uso de "cookies" para utilizar Habbo. </div>
+</div>
+<script type="text/javascript">
+    document.cookie = "habbotestcookie=supported";
+    var cookiesEnabled = document.cookie.indexOf("habbotestcookie") != -1;
+    if (cookiesEnabled) {
+        var date = new Date();
+        date.setTime(date.getTime()-24*60*60*1000);
+        document.cookie="habbotestcookie=supported; expires="+date.toGMTString();
+    } else {
+        $('alert-cookies-container').show();
+    }
+</script>
+<script type="text/javascript">
+                HabboView.add(function() {
+                    LandingPage.init();
+                    if (!LandingPage.focusForced) {
+                        LandingPage.fieldFocus('login-username');
+                    }
+                });
+</script>
+</div>
+</form>
+</div>
+<div id="fp-container">
+<div id="content">
+<div id="column1" class="column">
+<div class="habblet-container ">
+<div style="width: 890px; margin: 0 auto">
+<div id="tagline">Haz amig@s, súmate a la diversión y date a conocer</div></div>
+<div id="frontpage-image-container">
+<div id="join-now-button-container">
+<div id="join-now-button-wrapper-fb">
+<div class="join-now-alternative">&nbsp;</div>
+<div class="join-now-button">
+<a class="join-now-link" href="#" onclick="assistedLogin(FB); return false;">
+<span class="join-now-text-big">Usa Beryllium</span>
+<span class="join-now-text-small">con <span class="fbword">Facebook</span></span>
+</a>
+<span class="close"></span>
+</div>
+<div class="join-now-alternative">
+<a id="register-link-fb" href="/quickregister/start" onclick="startRegistration(this); return false;">
+o crea una cuenta Beryllium </a>
+</div>
+</div>
+<div id="join-now-button-wrapper">
+<div class="join-now-alternative">
+<a href="/quickregister/start" class="newusers" onclick="startRegistration(this); return false;"><b>Nuevo usuario</b>,<span style="color: #8f8f8f;">haz clic aquí y</span></a>
+</div>
+<div class="join-now-button">
+<a class="join-now-link" id="register-link" href="http:[% http_host %]/quickregister/start" onclick="startRegistration(this); return false;">
+<span class="join-now-text-big">&Uacute;nete ahora</span>
+<span class="join-now-text-small">es Gratis</span>
+</a>
+<span class="close"></span>
+</div>
+<div class="join-now-alternative">
+<a class="fbicon" href="#" onclick="assistedLogin(FB); return false;">
+Usa Beryllium con Facebook
+</a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+        function startRegistration(elem) {
+            targetUrl = elem.href;
+            if (typeof targetUrl == "undefined") {
+                targetUrl = "/quickregister/start";
+            }
+            window.location.href = targetUrl;
+        }
+    </script>
+<div id="people-inside">
+<b><span><span class="stats-fig">[% now_online %]</span> Beryllium Conectados</span></b>
+<i></i>
+</div>
+<a href="/quickregister/start" id="frontpage-image" style="background-image: url('//xukys-hotel.com/images/landing_nuts.png')" onclick="startRegistration(this); return false;"></a>
+</div>
+<script type="text/javascript">
+    document.observe("dom:loaded", function() {
+        LandingPage.checkLoginButtonSetTimer();
+    });
+</script>
+</div>
+<script type="text/javascript">if (!$(document.body).hasClassName('process-template')) { Rounder.init(); }</script>
+</div>
+<!--[if lt IE 7]>
+<script type="text/javascript">
+Pngfix.doPngImageFix();
+</script>
+<![endif]-->
+<div id="footer" class="new_and_improved">
+<p class="footer-links">|<a href="mailto:tuemail.com" target="_blank">Publicidad</a>|<a href="[% http_host %]/papers/termsAndConditions" target="_new">T&eacute;rminos de servicio</a>|</p>
+<div id="age-recommendation"></div>
+<div></div>
+<div></div>
+<p class="copyright">2010 ~ 2011 Beryllium Hotel || Web Modificada por masacre10 || Todos los derechos reservados a sus respectivos dueños.</p>
+<div id="compact-tags-container">
+<span class="tags-habbos-like">Loc@s por</span>
+<ul class="tag-list">
+<li><a href="[% http_host %]/tag/facebook" class="tag">facebook</a> </li>
+<li><a href="[% http_host %]/tag/xd" class="tag">xd</a> </li>
+<li><a href="[% http_host %]/tag/rock" class="tag">rock</a> </li>
+<li><a href="[% http_host %]/tag/pizza" class="tag">pizza</a> </li>
+<li><a href="[% http_host %]/tag/mtv" class="tag">mtv</a> </li>
+<li><a href="[% http_host %]/tag/pop" class="tag">pop</a> </li>
+<li><a href="[% http_host %]/tag/azul" class="tag">azul</a> </li>
+<li><a href="[% http_host %]/tag/rojo+" class="tag">rojo </a> </li>
+<li><a href="[% http_host %]/tag/selena+gomez" class="tag">selena gomez</a> </li>
+<li><a href="[% http_host %]/tag/negro" class="tag">negro</a> </li>
+<li><a href="[% http_host %]/tag/Beryllium" class="tag">Beryllium</a> </li>
+<li><a href="[% http_host %]/tag/vip" class="tag">vip</a> </li>
+<li><a href="[% http_host %]/tag/rap" class="tag">rap</a> </li>
+<li><a href="[% http_host %]/tag/staff" class="tag">staff</a> </li>
+<li><a href="[% http_host %]/tag/yo" class="tag">yo</a> </li>
+<li><a href="[% http_host %]/tag/morado" class="tag">morado</a> </li>
+<li><a href="[% http_host %]/tag/verde" class="tag">verde</a> </li>
+<li><a href="[% http_host %]/tag/lmfao" class="tag">lmfao</a> </li>
+<li><a href="[% http_host %]/tag/masacre10" class="tag">masacre10</a> </li>
+<li><a href="[% http_host %]/tag/futbol" class="tag">futbol</a> </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+if (typeof HabboView != "undefined") {
+	HabboView.run();
+}
+</script>
+<script src="https://rpxnow.com/js/lib/rpx.js" type="text/javascript"></script>
+<script type="text/javascript">
+    RPXNOW.overlay = false;
+    RPXNOW.language_preference = 'es'; 
+</script>
+</body></html>

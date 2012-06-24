@@ -1,0 +1,191 @@
+
+<noscript>
+    <meta http-equiv="refresh" content="0;url=/client/nojs" />
+</noscript>
+<meta http-equiv="Pragma" content="no-cache, no-store" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store" />
+
+<script type="text/javascript">
+    FlashExternalInterface.loginLogEnabled = false;
+    
+    FlashExternalInterface.logLoginStep("web.view.start");
+    
+    if (top == self) {
+        FlashHabboClient.cacheCheck();
+    }
+    var flashvars = {
+            "client.allow.cross.domain" : "1", 
+            "client.notify.cross.domain" : "0", 
+            "connection.info.host" : "[% ip_server %]",
+            "connection.info.port" : "[% port_server %]", 
+            "site.url" : "http:[% http_host %]", 
+            "url.prefix" : "http:[% http_host %]", 
+            "client.reload.url" : "http:[% http_host %]/client", 
+            "client.fatal.error.url" : "http:[% http_host %]/flash_client_error", 
+            "client.connection.failed.url" : "http:[% http_host %]/client_connection_failed", 
+            "external.variables.txt" : "[% external_variables %]", 
+            "external.texts.txt" : "[% external_flash_texts %]", 
+            "productdata.load.url" : "[% productdata %]", 
+            "furnidata.load.url" : "[% furnidata %]",
+			"use.sso.ticket" : "1",
+            "sso.ticket" : "[% ticket %]", 
+            "processlog.enabled" : "1", 
+            "account_id" : "[% BERYLLIUM_U_ID %]", 
+            "client.starting" : "¡Por favor, espera! Habbo se está cargando", 
+            "flash.client.url" : "[% gordon_swf_release %]", 
+            "user.hash" : "542315537fd63bd066b9a95d44a63351d18ff383", 
+            "has.identity" : "1", 
+            "flash.client.origin" : "popup" 
+    };
+    var params = {
+        "base" : "[% gordon_swf_release %]",
+        "allowScriptAccess" : "always",
+        "menu" : "false"                
+    };
+
+        if (!(HabbletLoader.needsFlashKbWorkaround())) {
+            params["wmode"] = "opaque";
+        }
+
+    FlashExternalInterface.signoutUrl = "https:[% http_host %]/account/logout?token=59725f53db";
+
+    var clientUrl = "[% gordon_swf_release %]Habbo[% IF gordon_swf_release == 'http://images.xukys-hotel.com/gordon/RELEASE63-201111301255-246708300/' %]_xu[% END %].swf";
+    swfobject.embedSWF(clientUrl, "flash-container", "100%", "100%", "10.1.0", "[% images_host %]/web-gallery/flash/expressInstall.swf", flashvars, params, null, FlashExternalInterface.embedSwfCallback);
+
+    window.onbeforeunload = unloading;
+    function unloading() {
+        var clientObject;
+        if (navigator.appName.indexOf("Microsoft") != -1) {
+            clientObject = window["flash-container"];
+        } else {
+            clientObject = document["flash-container"];
+        }
+        try {
+            clientObject.unloading();
+        } catch (e) {}
+    }
+    window.onresize = function() {
+        HabboClient.storeWindowSize();
+    }.debounce(0.5);
+</script>
+
+<meta name="description" content="Habbo Hotel: haz amig@s, únete a la diversión y date a conocer." />
+<meta name="keywords" content="habbo hotel, mundo, virtual, red social, gratis, comunidad, personaje, chat, online, adolescente, roleplaying, unirse, social, grupos, forums, seguro, jugar, juegos, amigos, adolescentes, raros, furni raros, coleccionable, crear, coleccionar, conectar, furni, muebles, mascotas, diseño de salas, compartir, expresión, placas, pasar el rato, música, celebridad, visitas de famosos, celebridades, juegos en línea, juegos multijugador, multijugador masivo" />
+
+<!--[if IE 8]>
+<link rel="stylesheet" href="[% images_host %]/web-gallery/static/styles/ie8.css" type="text/css" />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="[% images_host %]/web-gallery/static/styles/ie.css" type="text/css" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="[% images_host %]/web-gallery/static/styles/ie6.css" type="text/css" />
+<script src="[% images_host %]/web-gallery/static/js/pngfix.js" type="text/javascript"></script>
+<script type="text/javascript">
+try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {}
+</script>
+
+<style type="text/css">
+body { behavior: url(/js/csshover.htc); }
+</style>
+<![endif]-->
+<meta name="build" content="63-BUILD1444 - 19.06.2012 11:45 - es" />
+</head>
+
+<body id="client" class="flashclient">
+<div id="overlay"></div>
+<img src="[% images_host %]/web-gallery/v2/images/page_loader.gif" style="position:absolute; margin: -1500px;" />
+
+<div id="overlay"></div>
+<div id="client-ui" >
+    <div id="flash-wrapper">
+    <div id="flash-container">
+        <div id="content" style="width: 400px; margin: 20px auto 0 auto; display: none">
+<div class="cbb clearfix">
+    <h2 class="title">Por favor, actualiza tu Flash Player a la última versión</h2>
+    <div class="box-content">
+            <p>Puedes instalar y descargar Adobe Flash Player aquí: <a href="http://get.adobe.com/flashplayer/">Instala Flash player</a>. Más instrucciones para su instalación aquí: <a href="http://www.adobe.com/products/flashplayer/productinfo/instructions/">Más información</a></p>
+            <p><a href="http://www.adobe.com/go/getflashplayer"><img src="[% images_host %]/web-gallery/v2/images/client/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+    </div>
+</div>
+        </div>
+        <script type="text/javascript">
+            $('content').show();
+        </script>
+        <noscript>
+            <div style="width: 400px; margin: 20px auto 0 auto; text-align: center">
+                <p>If you are not automatically redirected, please <a href="/client/nojs">click here</a></p>
+            </div>
+        </noscript>
+    </div>
+    </div>
+	<div id="content" class="client-content"></div>            
+</div>
+    <script type="text/javascript">
+        RightClick.init("flash-wrapper", "flash-container");
+        if (window.opener && window.opener != window && window.opener.location.href == "/") {
+            window.opener.location.replace("/me");
+        }
+        $(document.body).addClassName("js");
+       	HabboClient.startPingListener();
+        Pinger.start(true);
+        HabboClient.resizeToFitScreenIfNeeded();
+    </script>
+<div id="fb-root"></div>
+
+<script type="text/javascript">
+    window.fbAsyncInit = function() {
+        Cookie.erase("fbsr_[% fb_appid %]");
+        FB.init({appId: '[% fb_appid %]', status: true, cookie: true, xfbml: true, oauth: true});
+        $(document).fire("fbevents:scriptLoaded");
+
+    };
+    window.assistedLogin = function(FBobject, optresponse) {
+        
+        Cookie.erase("fbsr_[% fb_appid %]");
+        FBobject.init({appId: '[% fb_appid %]', status: true, cookie: true, xfbml: true, oauth: true});
+
+        permissions = 'user_birthday,email';
+        defaultAction = function(response) {
+
+            if (response.authResponse) {
+                fbConnectUrl = "/facebook?connect=true";
+                Cookie.erase("fbhb_val_[% fb_appid %]");
+                Cookie.set("fbhb_val_[% fb_appid %]", response.authResponse.accessToken);
+                Cookie.erase("fbhb_expr_[% fb_appid %]");
+                Cookie.set("fbhb_expr_[% fb_appid %]", response.authResponse.expiresIn);
+                window.location.replace(fbConnectUrl);
+            }
+        };
+
+        if (typeof optresponse == 'undefined')
+            FBobject.login(defaultAction, {scope:permissions});
+        else
+            FBobject.login(optresponse, {scope:permissions});
+
+    };
+
+    (function() {
+        var e = document.createElement('script');
+        e.async = true;
+        e.src = 'https://connect.facebook.net/es_ES/all.js';
+        document.getElementById('fb-root').appendChild(e);
+    }());
+</script>
+
+
+[% IF GA %]
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '[% GA %]']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+[% END %]
+</body>
+</html>

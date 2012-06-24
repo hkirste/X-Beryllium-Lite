@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteRule ^account/submit(|/)$ 														/index.pl
+RewriteRule ^account/logout(\_ok)?(|/)$													/logout.pl
+RewriteRule ^me(|/)$ 																	/me.pl
+RewriteRule ^client(|/)$ 																/client.pl
+RewriteRule ^quickregister/(start|age\_gate\/e\/)([0-9][0-9][a-z])?(|/)$ 				/register.pl?paso=1&errorz=$2
+RewriteRule ^quickregister/age_gate_submit(|/)$ 										/register.pl?paso=2
+RewriteRule ^quickregister/age_limit(|/)$												/register.pl?paso=3
+RewriteRule ^quickregister/email_password(\_submit|\/e\/)?([0-90-9a-z]+)?(|/)$			/register.pl?paso=4&submit=$1&errorz=$2
+RewriteRule ^quickregister/backToAccountDetails(|/)$									/register.pl?paso=4
+RewriteRule ^quickregister/captcha(\_submit|\/e\/)?([0-90-9a-z]+)?(|/)$					/register.pl?paso=5&submit=$1&errorz=$2
+RewriteRule ^quickregister/refresh_avatars(|/)$											/my-beryllium/refresh_avatars.pl
+
+RewriteRule \.pm$																		/404.pl [L]
+
+ErrorDocument 404 /404.pl

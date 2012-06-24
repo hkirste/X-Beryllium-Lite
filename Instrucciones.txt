@@ -1,0 +1,26 @@
+/*****^*^*^*^*^*^*^*^*^*^*^*^*****\
+|   X-Beryllium Lite Alpha 1.0    |
+\*****^*^*^*^*^*^*^*^*^*^*^*^*****/
+
+
+
+		Como configurar el sistema.
+1- Abre el archivo "httpd.conf" en C:\xampp\apache\conf
+2- Busca "perl" y borra la linea
+3- Guarda el archivo y reinicia apache
+4- Abre XKSConfig.pm
+5- Editar los datos de tu base de datos, web y cliente
+6- Abre tu web
+
+		Como cambiar twitter.
+1- Abre XKSConfig.pm
+2- Busca "twitter" y cambia el valor
+
+		Como instalar módulos.
+1- Abre install.bat
+2- Si tu internet es lento, ve a por un café y vuelve pronto.
+
+
+———————————————————————————————————————
+
+Hecho por Heinz K. - X-Beryllium © 2012

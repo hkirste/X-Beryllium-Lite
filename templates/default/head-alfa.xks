@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+<title>[% hotel_name %]: [% title %]</title>
+
+<script type="text/javascript">
+var ad_keywords = "";
+var ad_key_value = "";
+</script>
+<script type="text/javascript">
+var andSoItBegins = (new Date()).getTime();
+document.habboLoggedIn = [% IF LOGGED_IN %]true[% ELSE %]false[% END %];
+var habboName = "[% BERYLLIUM_U_NAME %]";
+var habboId = [% BERYLLIUM_U_ID %];
+var facebookUser = false;
+var habboReqPath = "http:[% http_host %]";
+var habboStaticFilePath = "[% images_host %]/web-gallery";
+var habboImagerUrl = "http:[% http_host %]/habbo-imaging/";
+var habboPartner = "";
+var habboDefaultClientPopupUrl = "http:[% http_host %]/client";
+window.name = "[% IF isclient %]client[% ELSE %]habboMain[% END %]";
+if (typeof HabboClient != "undefined") {
+    HabboClient.windowName = "client";
+    HabboClient.maximizeWindow = true;
+}
+</script>
+
+<meta property="fb:app_id" content="[% fb_appid %]" />
+
+<meta property="og:site_name" content="Habbo Hotel" />
+[% IF articles %]
+<meta property="og:title" content="[% news_article_title %]" />
+<meta property="og:description" content="%news_article_short%" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http:[% http_host %]/articles/%news_article_id_head%-%news_article_seo_link_head%" />
+[% ELSE %]
+<meta property="og:title" content="Habbo: [% title %]" />
+<meta property="og:url" content="http:[% http_host %][% REQUEST_URI %]" />
+[% END %]
+<meta property="og:image" content="[% images_host %]/web-gallery/v2/images/facebook/app_habbo_hotel_image.gif" />
+<meta property="og:locale" content="es_ES" />
+
+[% IF logout_page %]
+<script language="JavaScript" type="text/javascript">
+	document.logoutPage = true;
+	</script>
+[% END %]
+
+<link rel="shortcut icon" href="[% images_host %]/web-gallery/v2/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />

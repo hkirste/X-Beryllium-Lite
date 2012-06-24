@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^(.*)(|/)$ /
+
+order deny,allow
+deny from all

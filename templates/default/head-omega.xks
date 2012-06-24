@@ -1,0 +1,30 @@
+<meta name="keywords" content="xukys cms, xukys perl, x-beryllium perl, x-beryllium, cms perl" />
+<meta name="description" content="Reserva suite gratis en el mayor Hotel virtual. Queda con tus viej@s amig@s, haz nuev@s, juega, chatea, crea tu avatar, tus habitaciones y más aún..." /> 
+<meta name="tags" content="habbo hotel, mundo, virtual, red social, gratis, comunidad, personaje, chat, online, adolescente, roleplaying, unirse, social, grupos, forums, seguro, jugar, juegos, amigos, adolescentes, raros, furni raros, coleccionable, crear, coleccionar, conectar, furni, muebles, mascotas, diseño de salas, compartir, expresión, placas, pasar el rato, música, celebridad, visitas de famosos, celebridades, juegos en línea, juegos multijugador, multijugador masivo" /> 
+ 
+<!--[if IE 8]>
+<link rel="stylesheet" href="[% http_host %]/web-gallery/v2/styles/ie8.css" type="text/css" />
+<![endif]--> 
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="[% http_host %]/web-gallery/v2/styles/ie.css" type="text/css" />
+<![endif]--> 
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="[% http_host %]/web-gallery/v2/styles/ie6.css" type="text/css" />
+<script src="[% http_host %]/web-gallery/static/js/pngfix.js" type="text/javascript"></script>
+<script type="text/javascript">
+try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {}
+</script>
+ 
+<style type="text/css">
+body { behavior: url(http://www.habbo.com/js/csshover.htc); }
+</style>
+<![endif]--> 
+<meta name="build" content="%web_build_str%" /> 
+<style type="text/css">
+.room-occupancy-1 { background-image: url('[% http_host %]/web-gallery/v2/images/rooms/room_icon_1.gif') !important; }
+.room-occupancy-2 { background-image: url('[% http_host %]/web-gallery/v2/images/rooms/room_icon_2.gif') !important; }
+.room-occupancy-3 { background-image: url('[% http_host %]/web-gallery/v2/images/rooms/room_icon_3.gif') !important; }
+.room-occupancy-4 { background-image: url('[% http_host %]/web-gallery/v2/images/rooms/room_icon_4.gif') !important; }
+.room-occupancy-5 { background-image: url('[% http_host %]/web-gallery/v2/images/rooms/room_icon_5.gif') !important; }
+</style>
+</head>
