@@ -16,11 +16,22 @@
 1- Abre XKSConfig.pm
 2- Busca "twitter" y cambia el valor
 
-		Como instalar módulos.
-1- Abre install.bat
-2- Si tu internet es lento, ve a por un café y vuelve pronto.
+		Como instalar mÃ³dulos.
+1- Ejecuta el siguiente cÃ³digo en CMD (Windows > Todos los programas > Accesorios > SÃ­mbolo de sistema)
+2- Si tu internet es lento, ve a por un cafÃ© y vuelve pronto.
+
+cd /xampp
+cd perl/bin
+ppm install DBI
+ppm install DBD-mysql
+ppm install CGI-Session
+ppm install Template-Toolkit
+ppm install Switch
+ppm install Captcha-reCAPTCHA
+ppm install Email-Valid
+ppm install Net-Domain-TLD
 
 
-———————————————————————————————————————
+â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
 
-Hecho por Heinz K. - X-Beryllium © 2012
+Hecho por Heinz K. - X-Beryllium Â© 2012
