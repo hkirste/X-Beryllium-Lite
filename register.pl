@@ -169,4 +169,4 @@ if($paso == '1') {
 (my $epochseconds,my $microseconds) = gettimeofday;
 my $andSoItEnds = $epochseconds.'.'.$microseconds;
 
-print ($andSoItEnds-$andSoItBegan);
+#print ($andSoItEnds-$andSoItBegan);
